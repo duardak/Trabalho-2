@@ -2,27 +2,50 @@
     background-color: var(--fundo-azul);
     margin: 0;
 }
+
 .container{
     display: flex;
     align-items: center;
 }
+
 .container__imagem{
     width: 30px;
     height: 30px;
 }
-.container__titulo,.container__frase{
+
+.container__titulo, .container__imagem, .container__frase{
+    display: none;
+
+}
+.container__titulo, .container__frase{
+    display: flex;
+
+}
+.cx-texto{
+    display: flex;
+    justify-content: center;
+}
+.orientacao3{
+    display: block;
+    font-size: 30px;
+    color: aquamarine;
+    border: 3px solid white;
+    margin-top: 3em;
+    padding: 1em;
+}
+.orientacao, .orientacao2{
     display: none;
 }
-@media screen and(min-width:1024px) {
-    .container__frase {
+
+@media screen and(min-width:768px) {
+    .container__titulo{
         font-size: 30px;
         display: inline-block;
     }
-    .container__frase {
+    .container__titulo{
         font-weight: 400;
-        padding-left: 5em;
     }
-    .orientacao {
+    .orientacao2{
         display: block;
         font-size: 30px;
         color: var(--lilas);
